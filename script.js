@@ -1,19 +1,31 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 const employees = [];  // need to declare variable with empty array, now is a global variable
-
+let shouldContinue = true;
+// let employees = [ // didn't work as object array?!?
+//   {
+//     firstName:"",
+//     lastName: "",
+//     salary: 0
+// }
+// ]
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
-  fn = prompt("Enter first name:");
-  ln = prompt("Enter last name:");
-  sl = prompt("Enter salary:");
-  add = confirm("Would you like to add another employee?")
+  while (shouldContinue) {
+    fn = prompt("Enter first name:");
+    ln = prompt("Enter last name:");
+    sl = prompt("Enter salary:");
+    let shouldContinuePrompt = prompt("Would you like to add another employee?");
+  
+  if(!shouldContinuePrompt) {
+  shouldContinue = false;
+  }
   employees.push({firstName: fn, lastName: ln, salary: sl})
-  // firstName (key), fn (value)
+    // firstName (key), fn (value)
   return employees;
+  }
 }
-
 // function addNumbers(x, y) {    // TUTOR NOTES EXAMPLE OF BASIC FUNCTION AND MEANING OF PARAMETERS AND PASSING PARAMETERS
 //   console.log(x+y)
 //   console.log
