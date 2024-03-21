@@ -7,7 +7,7 @@ This will essentially demonstrate my understanding of javascript and the ability
 
 This website will give insight to my skills and capabilities as a web developer for potential employers to review. My adaptation to usability and accessibility for users by incorporating semantics, responsive designs, and flex layouts, showcases the variety of knowledge I have.
 
-# Deployment: 
+# Deployment: https://soupthefull-stack.github.io/Employee-Payroll-Tracker-Design/
 
 License MIT License
 
